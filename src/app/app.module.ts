@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculateComponent } from './calculate/calculate.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { CalculateComponent } from './calculate/calculate.component';
     BrowserModule,
     FormsModule, 
     ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
