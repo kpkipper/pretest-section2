@@ -1,0 +1,45 @@
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    border: solid 1px black;
+    float: left;
+    font-size: 25px;
+  }
+  
+  .left {
+    width: 200px;
+  }
+  
+  .right {
+    width: 300px;
+  }
+  .middle {
+      width: 100%;
+  }
+
+  .row {
+    content: "";
+    display: flex;
+    clear: both;
+  }
+
+  .input {
+    height: 30px;
+    width: 120px;
+    margin: 10px;
+    font-size: 18px;
+  }
+  .select {
+    height: 30px;
+    width: 12%;
+    margin: 10px 20px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

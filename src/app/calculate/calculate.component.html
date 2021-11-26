@@ -1,0 +1,18 @@
+<h2>Calculate Prime and Fibanacci</h2>
+<form [formGroup]="calculationForm">
+<div class="row">
+    <div class="column left">
+        <input formControlName="input" type="number" id="myInput" class="input">
+    </div>
+    <div class="column middle">
+        <select formControlName="mode" class="select">
+            <option value="prime" >IsPrime</option>
+            <option value="fibonacci">IsFibonacci</option>
+        </select>
+
+    </div>
+    <div class="column right">
+        <div style="height: 700px; font-weight: 500;">{{result}}</div>
+    </div>
+</div>
+</form>

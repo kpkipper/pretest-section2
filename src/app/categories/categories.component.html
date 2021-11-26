@@ -1,0 +1,15 @@
+<h2>Categories Table</h2>
+<form [formGroup]="form">
+    <input type="text" id="myInput" class="input" formControlName="filter" placeholder="Search for Category.." title="Type in a name"> 
+  </form>
+
+<table class="myTable">
+    <tr class="header">
+        <th style="width:60%;">Categories</th>      
+    </tr>
+    <tbody id="myTable">
+        <tr *ngFor="let category of filterCategories">
+            <td style="width:40%;" >{{category}}</td>
+       </tr>
+    </tbody>
+</table>
